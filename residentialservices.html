@@ -18,9 +18,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<!-- CSS Template -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS Template -->
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -41,7 +41,13 @@
         <header class="main-header main-header-01 headroom navbar-light sticky-top bg-white"><!-- End Header -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container"><!-- Logo --> <a class="navbar-brand header-navbar-brand" href="index.html">
-                        <img class="logo" src="assets/img/LogoS.png" alt="New Concept Homes Logo" style="height: 70px;">
+                        <!-- Desktop Logo -->
+                        <img class="logo d-none d-lg-block" src="assets/img/LogoS.png" alt="New Concept Homes Logo"
+                            style="height: 70px;">
+
+                        <!-- Mobile Logo -->
+                        <img class="logo d-lg-none" src="assets/img/LogoSS.jpeg" alt="New Concept Homes Logo (Mobile)"
+                            style="height: 60px;">
                     </a><!-- Logo --><!-- Menu -->
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas_Header_01"
                         aria-labelledby="offcanvas_Header_01Label">
@@ -57,31 +63,33 @@
                                 <li class="nav-item dropdown dropdown-hover"><a class="nav-link" href="#"
                                         data-bs-toggle="dropdown">Services</a>
                                     <ul class="dropdown-menu start">
-                                        <li><a class="dropdown-item" href="residentialservices.html">Residential Interior</a></li>
-                    <li><a class="dropdown-item" href="commercialservices.html">Commercial Interior</a></li>
-                                        </li>
-                                    </ul>
+                                        <li><a class="dropdown-item" href="residentialservices.html">Residential
+                                                Interior</a></li>
+                                        <li><a class="dropdown-item" href="commercialservices.html">Commercial
+                                                Interior</a></li>
                                 </li>
+                            </ul>
+                            </li>
 
-                                <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact</a></li>
                             </ul>
                         </div>
                     </div><!-- End Menu -->
                     <div class="nav d-flex ps-4">
-  <!-- Mobile Toggle -->
-  <button class="navbar-toggler" type="button"
-    data-bs-toggle="offcanvas" data-bs-target="#offcanvas_Header_01" aria-controls="offcanvas_Header_01"
-    aria-label="Toggle navigation">
-    <span class="toggler-icon"></span>
-  </button>
-  <!-- End Mobile Toggle -->
+                        <!-- Mobile Toggle -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas_Header_01" aria-controls="offcanvas_Header_01"
+                            aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                        </button>
+                        <!-- End Mobile Toggle -->
 
-  <!-- Get A Quote Button with Icon and Animation -->
-  <a href="contact-us.html#connect"
-    class="btn header-btn text-nowrap btn-sm d-none d-lg-flex text-uppercase ls-2 animate__animated animate__pulse animate__infinite">
-    <i class="bi-pen-fill me-2"></i> Get A Quote
-  </a>
-</div>
+                        <!-- Get A Quote Button with Icon and Animation -->
+                        <a href="contact-us.html#connect"
+                            class="btn header-btn text-nowrap btn-sm d-none d-lg-flex text-uppercase ls-2 animate__animated animate__pulse animate__infinite">
+                            <i class="bi-pen-fill me-2"></i> Get A Quote
+                        </a>
+                    </div>
 
                 </div>
             </nav>
@@ -549,7 +557,8 @@
                             <h5 class="footer-title-01 text-white">about us</h5>
                             <ul class="list-unstyled footer-link-01 m-0">
                                 <li><a class="text-white text-opacity-85" href="about.html">About</a></li>
-                                <li><a class="text-white text-opacity-85" href="residentialservices.html">Residential Interior
+                                <li><a class="text-white text-opacity-85" href="residentialservices.html">Residential
+                                        Interior
                                         Services</a></li>
                                 <li><a class="text-white text-opacity-85" href="commercialservices.html">Commercial
                                         Interior Services</a>
