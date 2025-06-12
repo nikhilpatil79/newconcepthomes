@@ -39799,6 +39799,14 @@ html {
   object-fit: cover;
 }
 
+@media (max-width: 767.98px) {
+  .equal-img {
+    height: auto;        /* Let image height adjust automatically */
+    object-fit: contain; /* Show the whole image without cropping */
+  }
+}
+
+
 .gallery-img {
   width: 100%;
   height: 400px;
@@ -39857,4 +39865,12 @@ img.interior-img {
 }
 #formStatus {
   transition: opacity 0.4s ease;
+}
+.main-header {
+    transition: top 0.3s;
+    z-index: 1030;
+  }
+
+  .logo {
+  max-height: 70px;
 }

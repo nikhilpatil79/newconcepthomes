@@ -64,6 +64,10 @@
               </ul>
             </div>
           </div><!-- End Menu -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_Header_01"
+            aria-controls="offcanvas_Header_01" aria-label="Toggle navigation">
+            <span class="toggler-icon"></span>
+          </button>
 
         </div>
       </nav>
@@ -165,45 +169,50 @@
               </div>
             </div>
             <div class="row justify-content-center">
-  <div class="col-lg-10">
-    <form class="rd-mailform" id="contactForm" method="POST" action="send-email.php">
-      <div class="row gy-4">
-        <div class="col-md-6">
-          <label class="form-label" for="contact-name">Full name *</label>
-          <input id="contact-name" type="text" name="name" placeholder="Rachel Roth" required class="form-control">
-        </div>
-        <div class="col-md-6">
-          <label class="form-label" for="contact-email">Your email *</label>
-          <input id="contact-email" type="email" name="email" placeholder="name@example.com" required class="form-control">
-        </div>
-        <div class="col-md-6">
-          <label class="form-label" for="contact-phone">Phone</label>
-          <input type="tel" name="contact-phone" class="form-control" placeholder="+91 9876543210" id="contact-phone">
-        </div>
-        <div class="col-md-6">
-          <label class="form-label" for="contactsubject">Subject *</label>
-          <select name="contactsubject" id="contactsubject" class="form-control" required>
-            <option value="" disabled selected>Select a service</option>
-            <option value="Residential Interior">Residential Interior</option>
-            <option value="Commercial Interior">Commercial Interior</option>
-          </select>
-        </div>
-        <div class="col-md-12">
-          <label class="form-label" for="contact-message">We can help you?</label>
-          <textarea class="form-control" id="contact-message" name="message" rows="5" placeholder="Hi there, I would like to ..." required></textarea>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary d-inline-flex align-items-center gap-2" type="submit" id="submitBtn">
-            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
-            <span class="btn-text">Submit</span>
-          </button>
+              <div class="col-lg-10">
+                <form class="rd-mailform" id="contactForm" method="POST" action="send-email.php">
+                  <div class="row gy-4">
+                    <div class="col-md-6">
+                      <label class="form-label" for="contact-name">Full name *</label>
+                      <input id="contact-name" type="text" name="name" placeholder="Rachel Roth" required
+                        class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="contact-email">Your email *</label>
+                      <input id="contact-email" type="email" name="email" placeholder="name@example.com" required
+                        class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="contact-phone">Phone</label>
+                      <input type="tel" name="contact-phone" class="form-control" placeholder="+91 9876543210"
+                        id="contact-phone">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="contactsubject">Subject *</label>
+                      <select name="contactsubject" id="contactsubject" class="form-control" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Residential Interior">Residential Interior</option>
+                        <option value="Commercial Interior">Commercial Interior</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12">
+                      <label class="form-label" for="contact-message">We can help you?</label>
+                      <textarea class="form-control" id="contact-message" name="message" rows="5"
+                        placeholder="Hi there, I would like to ..." required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary d-inline-flex align-items-center gap-2" type="submit"
+                        id="submitBtn">
+                        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                        <span class="btn-text">Submit</span>
+                      </button>
 
-          <div class="snackbars" id="formStatus" style="display:none;" aria-live="polite"></div>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
+                      <div class="snackbars" id="formStatus" style="display:none;" aria-live="polite"></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
 
           </div>
           <div class="p-3 bg-white border w-100 mt-5">
@@ -234,8 +243,10 @@
               <h5 class="footer-title-01 text-white">about us</h5>
               <ul class="list-unstyled footer-link-01 m-0">
                 <li><a class="text-white text-opacity-85" href="about.html">About</a></li>
-                <li><a class="text-white text-opacity-85" href="residentialservices.html">Residential Interior Services</a></li>
-                <li><a class="text-white text-opacity-85" href="commercialservices.html">Commercial Interior Services</a>
+                <li><a class="text-white text-opacity-85" href="residentialservices.html">Residential Interior
+                    Services</a></li>
+                <li><a class="text-white text-opacity-85" href="commercialservices.html">Commercial Interior
+                    Services</a>
                 </li>
                 <li><a class="text-white text-opacity-85" href="contact-us.html">Contact Us</a></li>
                 <li><a class="text-white text-opacity-85" href="contact-us.html#connect">Get a Quote</a></li>
