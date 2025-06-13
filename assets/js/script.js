@@ -65,12 +65,14 @@ let lastScrollTop = 0;
 
     lastScrollTop = scrollTop;
   });
-  const logo = document.getElementById('navbar-logo');
+  // Add / remove the .scrolled class based on scroll position
+const navbar = document.querySelector('.navbar');   // adjust selector if needed
+const SCROLL_TRIGGER = 50;                          // px from top when swap happens
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      logo.src = logo.getAttribute('data-light-logo');
-    } else {
-      logo.src = logo.getAttribute('data-dark-logo');
-    }
-  });
+window.addEventListener('scroll', () => {
+  if (window.scrollY > SCROLL_TRIGGER) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});

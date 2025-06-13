@@ -39874,3 +39874,9 @@ img.interior-img {
   .logo {
   max-height: 70px;
 }
+/* Hide the “scroll” logo by default */
+.logo-scroll { display:none; }
+
+/* When the navbar gets the .scrolled class, flip which logo is visible */
+.navbar.scrolled .logo-default { display:none; }
+.navbar.scrolled .logo-scroll  { display:inline-block; }
