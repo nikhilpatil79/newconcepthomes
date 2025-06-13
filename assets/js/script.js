@@ -65,3 +65,12 @@ let lastScrollTop = 0;
 
     lastScrollTop = scrollTop;
   });
+  const logo = document.getElementById('navbar-logo');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      logo.src = logo.getAttribute('data-light-logo');
+    } else {
+      logo.src = logo.getAttribute('data-dark-logo');
+    }
+  });
