@@ -39787,10 +39787,10 @@ html {
 }
 
 .outlined-text {
-  font-size: 1.0rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: white;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, 2px 2px 5px rgba(0, 0, 0, 0.4);
+  font-size: 1.1rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sa;
+  color: black;
+  text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey, 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .equal-img {
