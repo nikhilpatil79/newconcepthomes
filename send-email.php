@@ -19,14 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // Replace with your SMTP server
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'nikseven9@gmail.com';     // Your email
-        $mail->Password   = 'lcxk auys xgrk idke';        // App password or SMTP passkey
+        $mail->Username   = 'newconcepthomesbro@gmail.com';     // Your email
+        $mail->Password   = 'cnfc wjmh rwcb exxw';        // App password or SMTP passkey
         $mail->SMTPSecure = 'tls';                      // 'ssl' or 'tls'
         $mail->Port       = 587;                         // 465 for SSL, 587 for TLS
 
         // Email content
-        $mail->setFrom('nikseven9@gmail.com', 'NewConceptHomes');
-        $mail->addAddress('nikilpatil079@gmail.com');   // Destination
+        $mail->setFrom('newconcepthomesbro@gmail.com', 'NewConceptHomes');
+        $mail->addAddress('newconcepthomesbro@gmail.com');   // Destination
 
         $mail->Subject = "New Contact Form Submission From NewConceptHomes: $subject";
         $mail->Body    = "Name: $name\nEmail: $email\nPhone: $phone\nMessage:\n$message";

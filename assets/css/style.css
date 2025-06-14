@@ -39788,10 +39788,18 @@ html {
 
 .outlined-text {
   font-size: 1.1rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sa;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: black;
   text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey, 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
+
+/* Smaller font size for mobile screens */
+@media (max-width: 600px) {
+  .outlined-text {
+    font-size: 0.8rem;
+  }
+}
+
 
 .equal-img {
   width: 100%;
@@ -39880,6 +39888,15 @@ img.interior-img {
 /* When the navbar gets the .scrolled class, flip which logo is visible */
 .navbar.scrolled .logo-default { display:none; }
 .navbar.scrolled .logo-scroll  { display:inline-block; }
+
+.logo-default {
+  height: 100px;
+}
+@media (max-width: 600px) {
+  .logo-default {
+    height: 90px; /* or adjust to your preference */
+  }
+}
 
 @media (max-width: 767.98px) {
     .swiper-prev-02,
