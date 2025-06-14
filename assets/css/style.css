@@ -18674,7 +18674,8 @@ progress {
 .display-2 {
   font-size: calc(1.53rem + 3.36vw);
   font-weight: 700;
-  line-height: 1.2
+  line-height: 1.2;
+  margin-top: 2.2rem;
 }
 
 @media (min-width:1200px) {
@@ -39890,11 +39891,11 @@ img.interior-img {
 .navbar.scrolled .logo-scroll  { display:inline-block; }
 
 .logo-default {
-  height: 100px;
+  height: 110px;
 }
 @media (max-width: 600px) {
   .logo-default {
-    height: 90px; /* or adjust to your preference */
+    height: 80px; /* or adjust to your preference */
   }
 }
 
