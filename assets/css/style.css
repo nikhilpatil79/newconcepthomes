@@ -39880,3 +39880,73 @@ img.interior-img {
 /* When the navbar gets the .scrolled class, flip which logo is visible */
 .navbar.scrolled .logo-default { display:none; }
 .navbar.scrolled .logo-scroll  { display:inline-block; }
+
+@media (max-width: 767.98px) {
+    .swiper-prev-02,
+    .swiper-next-02 {
+      display: none !important;
+    }
+  }
+  
+  .fullscreen-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .fullscreen-modal.show {
+    display: flex;
+  }
+
+  .fullscreen-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: #fff;
+    color: #000;
+    border: none;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+
+  .close-btn:hover {
+    background: #f0f0f0;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  

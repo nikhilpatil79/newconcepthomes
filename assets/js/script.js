@@ -76,3 +76,20 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('scrolled');
   }
 });
+
+const modal = document.getElementById('fullscreenModal');
+  const modalImg = document.getElementById('fullscreenImg');
+
+  document.querySelectorAll('.fullscreen-trigger').forEach(img => {
+    img.addEventListener('click', function () {
+      modalImg.src = this.src;
+      modal.classList.add('show');
+    });
+  });
+
+  function closeFullscreen() {
+    modal.classList.remove('show');
+    setTimeout(() => {
+      modalImg.src = '';
+    }, 200);
+  }
